@@ -9,6 +9,7 @@ import com.ab.model.Employee;
 public class EmployeeController {
 	@GetMapping("/employees")
 	public Employee getEmployees() {
+		System.out.println("AWS Employee service");
 		return new Employee("100", "Avishek", "1234567890");
 
 	}
